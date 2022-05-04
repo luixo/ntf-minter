@@ -4,6 +4,11 @@ export type NFTMetadata = {
   description: string;
 };
 
+export type Credentials = {
+  address: string;
+  network: Network;
+};
+
 export enum Network {
   Mainnet = "0x1",
   Ropsten = "0x3",

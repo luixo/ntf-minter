@@ -1,11 +1,10 @@
 import React from "react";
 import { Button, Card, Form as BSForm } from "react-bootstrap";
-import { SubmitErrorHandler, useForm, UseFormReturn } from "react-hook-form";
+import { SubmitErrorHandler, UseFormReturn } from "react-hook-form";
 import { NETWORK_NAMES } from "../constants";
 import { styled } from "../styles";
-import { NFTMetadata } from "../types";
+import { NFTMetadata, Credentials } from "../types";
 import { shortenHash } from "../utils";
-import { Credentials } from "./metamask-overlay";
 import { MintFormInput } from "./mint-form-input";
 
 const URL_REGEX =

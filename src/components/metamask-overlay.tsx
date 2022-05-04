@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Card, Spinner as BSSpinner } from "react-bootstrap";
 import { styled } from "../styles";
 import { useMetamask } from "../hooks/use-metamask";
-import { Network } from "../types";
+import { Credentials, Network } from "../types";
 import { NETWORK_NAMES } from "../constants";
 
 declare global {
@@ -39,11 +39,6 @@ const CardBody = styled(Card.Body, {
 });
 
 const VALID_NETWORKS = [Network.Ropsten];
-
-export type Credentials = {
-  address: string;
-  network: Network;
-};
 
 type Props = {
   onCredentialsChange: (credentials: Credentials) => void;
